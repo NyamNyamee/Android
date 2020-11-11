@@ -67,17 +67,25 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    // 로그인버튼 클릭시
     public void signIn(View view) {
+        Boolean login = false;
         // 임시 로그인을 위해 아이디와 비밀번호가 같을 때에만 로그인하도록
         String id = idET.getText().toString();
         String pw = pwET.getText().toString();
-        if (id.trim().length() != 0 && id != null && id.equals(pw)) {
-            Toast.makeText(this, "Hello " + id + "~!", Toast.LENGTH_SHORT).show();
-            // Log.d("loginTag", id + "/" + pw);
-            finish();
-        } else {
+        if (id.trim().length() == 0 || id == null || !id.equals(pw)) {
             // 실패시 로그인실패 토스트 출력
             Toast.makeText(this, "login failed", Toast.LENGTH_SHORT).show();
+        } else {
+            login = true;
+            Toast.makeText(this, "Hello " + id + "~!", Toast.LENGTH_SHORT).show();
+            Log.d("loginTag", id + "/" + pw + "/" + login);
+
+            Intent intent = new Intent();
+            intent.putExtra("login", login);
+            setResult(1, intent);
+            finish();
         }
+
     }
 }
