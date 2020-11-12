@@ -18,20 +18,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    
+    // 레이아웃의 버튼을 눌렀을때
     public void showDialog(View view) {
-        // 다이얼로그 껍데기 지정
+        // 대화상자창 껍데기 생성
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // 대화상자 껍데기 설정
         builder.setTitle("대화상자");
         builder.setMessage("종료고?");
         // android에 있는 리소스에서 아이콘을 가져와 아이콘지정
         builder.setIcon(android.R.drawable.ic_dialog_info);
 
-        // 다이얼로그의 버튼 지정
+        // 레이아웃의 버튼에 따라 대화상자의 버튼개수를 다르게 설정
         switch (view.getId()) {
-            // which가 -3
             case R.id.btn3:
-                builder.setNeutralButton("무시", new DialogInterface.OnClickListener() {
+                // 중립버튼(텍스트, 눌렀을때 이벤트) : 눌렀을때 which 의 값이 -3
+                builder.setNeutralButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getBaseContext(), "무시무시" + which, Toast.LENGTH_SHORT).show();
@@ -39,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 });
 
             case R.id.btn2:
-                // which가 -2
-                builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                // 거부버튼(텍스트, 눌렀을때 이벤트) : 눌렀을때 which 의 값이 -2
+                builder.setNegativeButton("아니요", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getBaseContext(), "무시무시" + which, Toast.LENGTH_SHORT).show();
@@ -48,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 });
 
             case R.id.btn1:
-                // which가 -1
-                builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                // 확인버튼(텍스트, 눌렀을때 이벤트) : 눌렀을때 which 의 값이 -1
+                builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getBaseContext(), "무시무시" + which, Toast.LENGTH_SHORT).show();

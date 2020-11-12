@@ -19,8 +19,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        Log.d("loginactivity", "로그인창시작");
         
         // id, pw인풋객체 연결
         idET = findViewById(R.id.idET);

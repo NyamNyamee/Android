@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smsex">
 
+    <!--유저한테 문자좀 받겠다고 권한요청-->
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
@@ -17,6 +18,7 @@
             android:exported="true">
             <!-- intent-filter로 받을 글로벌이벤트를 추가해야 한다 -->
         </receiver>
+        <!--SmsReceiver클래스로다가 SMS_RECIEVED를 받을것이다-->
         <receiver
             android:name=".SmsReceiver"
             android:enabled="true"
