@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="main"
+            type="com.example.serviceex01.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/startServiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반 서비스 시작" />
+
+        <Button
+            android:id="@+id/stopServiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반 서비스 종료" />
+
+        <Button
+            android:id="@+id/bindServiceButton"
+            android:onClick="@{main.bindServiceButton}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="바인드 서비스 시작" />
+
+        <Button
+            android:id="@+id/unbindServiceButton"
+            android:onClick="@{main.unbindServiceButton}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="바인드 서비스 종료" />
+        <Button
+            android:onClick="@{main.getData}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="바인드 서비스 데이터 얻기" />
+
+        <Button
+            android:id="@+id/intentServiceButton"
+            android:onClick="@{main.intentServiceButton}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인텐트 서비스" />
+
+    </LinearLayout>
+</layout>
