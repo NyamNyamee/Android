@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--눌렸을때-->
+    <item android:drawable="@android:color/holo_green_light" android:state_pressed="true" />
+    <!--포커스가 들어와있을때-->
+    <item android:drawable="@android:color/holo_red_light" android:state_focused="true" />
+    <!--기본색상-->
+    <item android:drawable="@android:color/holo_blue_light" />
+</selector>
