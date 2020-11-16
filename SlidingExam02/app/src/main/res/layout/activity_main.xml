@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 왼쪽 판넬 -->
+    <fragment
+        android:id="@+id/left_pane"
+        android:name="com.example.slidingexam02.leftFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!-- 오른쪽 판넬 -->
+    <fragment
+        android:id="@+id/content_pane"
+        android:name="com.example.slidingexam02.contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>

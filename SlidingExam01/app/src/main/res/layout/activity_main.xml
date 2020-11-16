@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:handle="@id/handle"
+        android:content="@id/content"
+        android:orientation="vertical"
+        android:rotation="180">
+        <TextView
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_blue_light"/>
+        <RelativeLayout
+            android:id="@+id/content"
+            android:rotation="180"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_orange_light"/>
+            <Button
+                android:onClick="viewSliding"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="좌우슬라이딩 보기"/>
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</LinearLayout>
