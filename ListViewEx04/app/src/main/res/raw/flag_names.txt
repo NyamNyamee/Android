@@ -1,0 +1,121 @@
+afghanistan
+antigua and barbuda
+argentina
+armenia
+australia
+austria
+bahrain
+barbados
+belarus
+벨기에
+bosnia and herzegovina
+botswana
+brazil
+bulgaria
+cambodia
+cameroon
+canada
+chile
+china
+colombia
+costa rica
+croatia
+cyprus
+czech republic
+denmark
+dominican republic
+east timor
+egypt
+el salvador
+england
+estonia
+europe
+finland
+france
+georgia
+germany
+ghana
+greece
+guatemala
+guernsey
+guinea bissau
+guinea
+honduras
+hong kong
+hungary
+iceland
+india
+indonesia
+iran
+iraq
+ireland
+israel
+italy
+japan
+jordan
+kazakhstan
+kenya
+kuwait
+lebanon
+libya new
+libya
+liechtenstein
+lithuania
+london
+luxembourg
+macau
+madagascar
+malaysia
+mali
+mauritius
+mexico
+moldova
+montenegro
+morocco
+myanmar
+netherlands
+new zealand
+niger
+nigeria
+north holland
+norway
+pakistan
+palestine
+papua new guinea
+paraguay
+peru
+philippines
+poland
+portugal
+puerto rico
+qatar
+romania
+russia
+saudi arabia
+scotland
+senegal
+serbia
+singapore
+slovakia
+slovenia
+south africa
+south korea
+spain
+st patricks flag
+sweden
+taiwan
+thailand
+tunisia
+turkey
+uganda
+ukraine
+ulster
+united arab emirates
+united kingdom
+united states
+uruguay
+uzbekistan
+venezuela
+vietnam
+wales
+yemen
