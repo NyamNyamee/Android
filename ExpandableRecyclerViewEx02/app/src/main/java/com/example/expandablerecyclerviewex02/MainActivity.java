@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new MyAdapter.ItemVO(MyAdapter.CHILD,"소주"));
         list.add(new MyAdapter.ItemVO(MyAdapter.CHILD,"맥주"));
         list.add(new MyAdapter.ItemVO(MyAdapter.CHILD,"막걸리"));
+
         MyAdapter.ItemVO itemVO = new MyAdapter.ItemVO(MyAdapter.HEADER,"안주");
         List<MyAdapter.ItemVO> list2 = new ArrayList<>();
         list2.add(new MyAdapter.ItemVO(MyAdapter.CHILD,"새우깡"));
